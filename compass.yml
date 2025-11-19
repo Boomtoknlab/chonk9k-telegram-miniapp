@@ -1,0 +1,16 @@
+name: chonk9k-telegram-miniapp
+id: ari:cloud:compass:2eefe999-d61b-469c-92ef-31fc5e9b3f13:component/ace244a1-3ae8-43fb-8c96-347d12170341/eebfe2ed-488a-481f-8ada-b15a9aecca34
+description: CHONK9K Telegram Mini-App A production-ready Telegram WebApp delivering the CHONKPUMP 9000 gamified user experience. This module provides a high-performance front-end layer, fully optimized for Telegram’s Mini-App APIs, seamless wallet flows, real-time engagement mechanics, and token-centric user onboarding.
+configVersion: 1
+typeId: SERVICE
+fields:
+  tier: 4
+links:
+  - name: null
+    type: REPOSITORY
+    url: https://github.com/Boomtoknlab/chonk9k-telegram-miniapp
+relationships:
+  DEPENDS_ON: []
+labels:
+  - source:github
+customFields: null
