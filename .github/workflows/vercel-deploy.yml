@@ -1,0 +1,35 @@
+name: Vercel Deployment - chonk9k-telegram-miniapp
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  notify-vercel:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout the repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Notify Vercel of deployment status
+      - name: Notify Vercel
+        uses: vercel/repository-dispatch/actions/status@v1
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          state: success
+          environment: production
+
+      # Optional: Send a Slack or Telegram notification
+      - name: Telegram Notification
+        uses: appleboy/telegram-action@v0.6.0
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          message: "✅ chonk9k-telegram-miniapp deployed successfully to Vercel!"
