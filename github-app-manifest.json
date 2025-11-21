@@ -1,0 +1,25 @@
+{
+  "name": "Chonk9k MiniApp CI",
+  "url": "https://mini.boomchainlab.com",
+  "hook_attributes": {
+    "url": "https://mini.boomchainlab.com/api/github/webhook"
+  },
+  "redirect_url": "https://mini.boomchainlab.com/settings/github-app/callback",
+  "public": false,
+  "default_permissions": {
+    "contents": "read",
+    "checks": "read",
+    "issues": "read",
+    "pull_requests": "read",
+    "deployments": "write",
+    "actions": "read",
+    "metadata": "read"
+  },
+  "default_events": [
+    "push",
+    "pull_request",
+    "release",
+    "deployment",
+    "workflow_run"
+  ]
+}
