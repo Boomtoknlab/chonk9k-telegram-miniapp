@@ -100,7 +100,7 @@ importers:
         version: 1.98.4(bufferutil@4.0.9)(typescript@5.0.2)(utf-8-validate@5.0.10)
       '@vercel/analytics':
         specifier: latest
-        version: 1.6.1(next@14.2.35(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
+        version: 2.0.1(next@14.2.35(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.5.0)
@@ -151,7 +151,7 @@ importers:
         version: 2.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       recharts:
         specifier: latest
-        version: 3.7.0(@types/react@18.0.0)(react-dom@19.0.0(react@19.0.0))(react-is@19.2.0)(react@19.0.0)(redux@5.0.1)
+        version: 3.8.1(@types/react@18.0.0)(react-dom@19.0.0(react@19.0.0))(react-is@19.2.0)(react@19.0.0)(redux@5.0.1)
       sonner:
         specifier: ^1.7.4
         version: 1.7.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -173,7 +173,7 @@ importers:
         version: 4.1.9
       '@types/node':
         specifier: ^22
-        version: 22.0.0
+        version: 22.19.19
       '@types/react':
         specifier: ^18
         version: 18.0.0
@@ -1208,8 +1208,8 @@ packages:
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
 
-  '@types/node@22.0.0':
-    resolution: {integrity: sha512-VT7KSYudcPOzP5Q0wfbowyNLaVR8QWUdw+088uFWwfvpY6uCWaXpqV6ieLAu9WBcnTa7H4Z5RLK8I5t2FuOcqw==}
+  '@types/node@22.19.19':
+    resolution: {integrity: sha512-dyh/xO2Fh5bYrfWaaqGrRQQGkNdmYw6AmaAUvYeUMNTWQtvb796ikLdmTchRmOlOiIJ1TDXfWgVx1QkUlQ6Hew==}
 
   '@types/prop-types@15.7.15':
     resolution: {integrity: sha512-F6bEyamV9jKGAFBEmlQnesRPGOQqS2+Uwi0Em15xenOxHaf2hv6L8YCVn3rPdPJOiJfPiCnLIRyvwVaqMY3MIw==}
@@ -1235,12 +1235,13 @@ packages:
   '@types/ws@8.18.1':
     resolution: {integrity: sha512-ThVF6DCVhA8kUGy+aazFQ4kXQ7E1Ty7A3ypFOe0IcJV8O/M511G99AW24irKrW56Wt44yG9+ij8FaqoBGkuBXg==}
 
-  '@vercel/analytics@1.6.1':
-    resolution: {integrity: sha512-oH9He/bEM+6oKlv3chWuOOcp8Y6fo6/PSro8hEkgCW3pu9/OiCXiUpRUogDh3Fs3LH2sosDrx8CxeOLBEE+afg==}
+  '@vercel/analytics@2.0.1':
+    resolution: {integrity: sha512-MTQG6V9qQrt1tsDeF+2Uoo5aPjqbVPys1xvnIftXSJYG2SrwXRHnqEvVoYID7BTruDz4lCd2Z7rM1BdkUehk2g==}
     peerDependencies:
       '@remix-run/react': ^2
       '@sveltejs/kit': ^1 || ^2
       next: '>= 13'
+      nuxt: '>= 3'
       react: ^18 || ^19 || ^19.0.0-rc
       svelte: '>= 4'
       vue: ^3
@@ -1251,6 +1252,8 @@ packages:
       '@sveltejs/kit':
         optional: true
       next:
+        optional: true
+      nuxt:
         optional: true
       react:
         optional: true
@@ -1748,8 +1751,8 @@ packages:
     resolution: {integrity: sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==}
     engines: {node: '>=0.10.0'}
 
-  recharts@3.7.0:
-    resolution: {integrity: sha512-l2VCsy3XXeraxIID9fx23eCb6iCBsxUQDnE8tWm6DFdszVAO7WVY/ChAD9wVit01y6B2PMupYiMmQwhgPHc9Ew==}
+  recharts@3.8.1:
+    resolution: {integrity: sha512-mwzmO1s9sFL0TduUpwndxCUNoXsBw3u3E/0+A+cLcrSfQitSG62L32N69GhqUrrT5qKcAE3pCGVINC6pqkBBQg==}
     engines: {node: '>=18'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -1853,8 +1856,8 @@ packages:
     engines: {node: '>=12.20'}
     hasBin: true
 
-  undici-types@6.11.1:
-    resolution: {integrity: sha512-mIDEX2ek50x0OlRgxryxsenE5XaQD4on5U2inY7RApK3SOJpofyw7uW2AyfMKkhAxXIceo2DeWGVGwyvng1GNQ==}
+  undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
   update-browserslist-db@1.1.4:
     resolution: {integrity: sha512-q0SPT4xyU84saUX+tomz1WLkxUbuaJnR1xWt17M7fJtEJigJeWUNGUqrauFXsHnqev9y9JTRGwk13tFBuKby4A==}
@@ -1893,6 +1896,7 @@ packages:
 
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   vaul@0.9.9:
@@ -2962,7 +2966,7 @@ snapshots:
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 22.0.0
+      '@types/node': 22.19.19
 
   '@types/d3-array@3.2.2': {}
 
@@ -2990,9 +2994,9 @@ snapshots:
 
   '@types/node@12.20.55': {}
 
-  '@types/node@22.0.0':
+  '@types/node@22.19.19':
     dependencies:
-      undici-types: 6.11.1
+      undici-types: 6.21.0
 
   '@types/prop-types@15.7.15': {}
 
@@ -3014,13 +3018,13 @@ snapshots:
 
   '@types/ws@7.4.7':
     dependencies:
-      '@types/node': 22.0.0
+      '@types/node': 22.19.19
 
   '@types/ws@8.18.1':
     dependencies:
-      '@types/node': 22.0.0
+      '@types/node': 22.19.19
 
-  '@vercel/analytics@1.6.1(next@14.2.35(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)':
+  '@vercel/analytics@2.0.1(next@14.2.35(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)':
     optionalDependencies:
       next: 14.2.35(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
@@ -3450,7 +3454,7 @@ snapshots:
 
   react@19.0.0: {}
 
-  recharts@3.7.0(@types/react@18.0.0)(react-dom@19.0.0(react@19.0.0))(react-is@19.2.0)(react@19.0.0)(redux@5.0.1):
+  recharts@3.8.1(@types/react@18.0.0)(react-dom@19.0.0(react@19.0.0))(react-is@19.2.0)(react@19.0.0)(redux@5.0.1):
     dependencies:
       '@reduxjs/toolkit': 2.10.1(react-redux@9.2.0(@types/react@18.0.0)(react@19.0.0)(redux@5.0.1))(react@19.0.0)
       clsx: 2.1.1
@@ -3547,7 +3551,7 @@ snapshots:
 
   typescript@5.0.2: {}
 
-  undici-types@6.11.1: {}
+  undici-types@6.21.0: {}
 
   update-browserslist-db@1.1.4(browserslist@4.28.0):
     dependencies:
